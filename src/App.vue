@@ -1,28 +1,35 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="container">
+    <div class="row text-center mt-1">
+      <div class="text-center">
+
+        <img src="./assets/Logo.png" alt="Fantasy Football" class="logo-image">
+      </div>
+    </div>
+    <div class="row mt-1 mb-5">
+      <h1 class="text-center">Welcome to the Family Showdown!</h1>
+    </div>
+    <div class="row mt-5 text-center">
+      <DraftTimer />
+
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DraftTimer from './components/DraftTimer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    DraftTimer
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+  .logo-image {
+    width: 400px;
+  }
 </style>
