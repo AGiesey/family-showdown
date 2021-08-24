@@ -3,7 +3,7 @@
     <div class="row text-center mt-1">
       <div class="text-center">
 
-        <img src="./assets/Logo.png" alt="Fantasy Football" class="logo-image">
+        <img src="./Logo.png" alt="Fantasy Football" class="logo-image">
       </div>
     </div>
     <div class="row mt-1 mb-5">
