@@ -1,48 +1,49 @@
 <template>
   <div>
-    <!-- <h2>Draft Countdown:</h2> -->
-    <!-- <p class="counter">{{countDownTime.toLocaleString('en-US')}}</p> -->
-    <p>The Family Showdown draft is set for {{draftTime.toLocaleString('en-US')}}</p>
-    <p>The current time is {{currentTime.toLocaleString('en-US')}}</p>
+    <h2>Draft Countdown:</h2>
+    <p class="counter">{{countdown}}.</p>
   </div>
 </template>
 
 <script>
+import moment from 'moment';
+
 export default {
   name: 'DraftTimer',
   data() {
     return {
-      draftTime: new Date('August 29, 2021 06:00:00 pm'),
-      currentTime: new Date(),
+      draftTime: moment('August 29, 2021 06:00:00 pm'),
+      countdown: 0,
+      cancelInterval: false
     }
   },
-  // computed: {
-  //   countDownTime: {
-  //     get: function() {
-
-  //       return this.draftTime - this.currentTime
-  //     },
-  //     set: function(now) {
-  //       this.currentTime = now;
-  //     }
-  //   }
-  // },
-  // methods: {
-  //   countDownTimer() {
-  //     setTimeout(() => {
-  //       this.countDownTime = this.draftTime - Date.now();
-  //     }, 1000)
-  //   }
-  // },
-  // mounted: function() {
-  //   this.countDownTimer()
-  // }
+  methods: {
+    getDurationString() {
+      const now = moment();
+      const duration = moment.duration(this.draftTime - now, 'milliseconds');
+      return `${duration.days()} Days, ${duration.hours()} Hours; ${duration.minutes()} Minutes; and ${duration.seconds()} Seconds`
+    },
+    startCountdown() {
+     this.cancelInterval = setInterval(() => {
+        this.countdown = this.getDurationString();
+      }, 1000)
+    }
+  },
+  mounted: function() {
+    this.countdown = moment(this.draftTime).fromNow();
+    this.startCountdown();
+  },
+  unmounted: function() {
+    if (this.cancelInterval) {
+      this.cancelInterval();
+    }
+  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .counter {
-    font-size: 5em;
+    font-size: 2em;
   }
 </style>
