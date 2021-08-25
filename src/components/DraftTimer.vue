@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h2>Draft Countdown:</h2>
-    <p class="counter">{{countdown}}.</p>
+    <p class="counter">{{countdown}}</p>
   </div>
 </template>
 
@@ -21,7 +20,7 @@ export default {
     getDurationString() {
       const now = moment();
       const duration = moment.duration(this.draftTime - now, 'milliseconds');
-      return `${duration.days()} Days, ${duration.hours()} Hours; ${duration.minutes()} Minutes; and ${duration.seconds()} Seconds`
+      return `${duration.days()} Days, ${duration.hours()}:${duration.minutes()}:${duration.seconds()}`
     },
     startCountdown() {
      this.cancelInterval = setInterval(() => {
@@ -44,6 +43,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .counter {
-    font-size: 2em;
+    font-size: 4em;
   }
 </style>

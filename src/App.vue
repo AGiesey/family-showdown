@@ -1,35 +1,30 @@
 <template>
-  <div id="app" class="container">
-    <div class="row text-center mt-1">
-      <div class="text-center">
-
-        <img src="../public/Logo.png" alt="Fantasy Football" class="logo-image">
-      </div>
-    </div>
-    <div class="row mt-1 mb-5">
-      <h1 class="text-center">Welcome to the Family Showdown!</h1>
-    </div>
-    <div class="row mt-5 text-center">
-      <DraftTimer />
-
-    </div>
+  <div id="app">
+    <Header />
+    <HomePage />
   </div>
 </template>
 
 <script>
-import DraftTimer from './components/DraftTimer.vue'
+import Header from './components/Header.vue'
+import HomePage from './components/HomePage.vue'
 
 export default {
   name: 'App',
   components: {
-    DraftTimer
+    Header,
+    HomePage
   }
 }
 </script>
 
 <style>
 
-  .logo-image {
-    width: 400px;
+  body {
+    height: 1vh;
+    background: #ECECEC !important;
+    
   }
+
+  
 </style>

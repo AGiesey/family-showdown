@@ -22,3 +22,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Yahoo! Fantasy sports API
+[here](https://developer.yahoo.com/fantasysports/guide/)
