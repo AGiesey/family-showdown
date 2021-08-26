@@ -12,7 +12,12 @@
                 blurb: `It's once again time to make our best guesses, let the autodrafter 
                     make it's best guesses, or to see how early we can draft Gronk in 
                     the effort to set up a winning season which is guaranteed to bring home our illustrious, 
-                    soon-to-be covited, and not-so-unique trophey!`
+                    soon-to-be covited, and not-so-unique trophey!`,
+                subtitle: `
+                    I made this website because I misunderstood the "custom URL" field on the Yahoo! fantasy league settings. 
+                    I was honestly kind of burnt out writing unit tests for the front end code at work. It's ok because this
+                    is a Vue app (Google it) so I am actually practicing stuff I need to know there anyway.
+                `
             }
         },
         components: {
@@ -30,6 +35,7 @@
         <Row>
             <FullColumn>
                 <h1 class="page-title">Welcome to the Family Showdown!</h1>
+                <p>{{subtitle}}</p>
             </FullColumn>
         </Row>
         
@@ -50,7 +56,7 @@
                 <h2>2020 Champ:</h2>
                 <figure class="figure">
                     <img class="figure-img img-fluid rounded" src="../../public/img/benita.jpeg" alt="Benita with the trophey">
-                    <figcaption class="figure-caption text-end">Notice the wine glasses in the background</figcaption>
+                    <figcaption class="figure-caption text-end">Notice the wine glasses...</figcaption>
                 </figure>
             </SideColumn>
         </Row>
