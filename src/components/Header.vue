@@ -6,26 +6,31 @@ export default {
 </script>
 
 <template>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg mb-5">
         <div class="container">
             <a href="#" class="navbar-brand">
                 <img src="../../public/img/Logo.png" alt="Fantasy Football" width="70">&nbsp;
-                The Family Showdown!
+                The Family Showdown
             </a>
         </div>
     </nav>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+    @import "../scss/variables.scss";
+    @import "../scss/mixins.scss";
+
     .navbar {
-        background: rgb(111,164,0);
-        background: linear-gradient(0deg, rgba(111,164,0,1) 0%, rgba(22,144,0,1) 13%, rgba(0,139,79,1) 82%);
+        background: $primary;
+        @include shadow;
     }
 
     .navbar-brand,
     .navbar-brand:hover,
     .navbar-brand:active,
     .navbar-brand:visited {
-        color: white
+        color: $dark-blue;
+        font-size: 1.4em;
+        font-weight: bold;
     }
 </style>

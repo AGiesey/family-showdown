@@ -18,13 +18,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+  @import "./scss/variables.scss";
 
   body {
     height: 1vh;
-    background: #ECECEC !important;
-    
+    background: $light-blue !important;
   }
-
-  
 </style>

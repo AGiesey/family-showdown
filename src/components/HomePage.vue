@@ -1,48 +1,75 @@
 <script>
     import DraftTimer from './DraftTimer.vue';
+    import MainColumn from './MainColumn.vue';
+    import SideColumn from './SideColumn.vue';
+    import FullColumn from './FullColumn.vue';
+    import Row from './Row.vue';
+
     export default {
         name: 'HomePage',
+        data: function() {
+            return {
+                blurb: `It's once again time to make our best guesses, let the autodrafter 
+                    make it's best guesses, or to see how early we can draft Gronk in 
+                    the effort to set up a winning season which is guaranteed to bring home our illustrious, 
+                    soon-to-be covited, and not-so-unique trophey!`
+            }
+        },
         components: {
-            DraftTimer
+            DraftTimer,
+            MainColumn,
+            SideColumn,
+            FullColumn,
+            Row
         }
     }
 </script>
 
 <template>
-    <div class="container">
-        <div class="row mt-3 mb-5">
-            <h1 class="text-center">Welcome to the Family Showdown!</h1>
-        </div>
-        <div class="row mt-5">
-            <div class="col-6 text-center">
-                <img src="../../public/img/draft.png" height="300" alt="nfl draft logo">
+    <div class="container px-4">
+        <Row>
+            <FullColumn>
+                <h1 class="page-title">Welcome to the Family Showdown!</h1>
+            </FullColumn>
+        </Row>
+        
+        <Row>
+            <MainColumn>
+                <h2>
+                    <span class="logo-container">
+                        <img src="../../public/img/draft.png" class="img-fluid" alt="nfl draft logo">
+                    </span>
+                    Get ready for draft day!! 
+                </h2>
+                <p>{{blurb}}</p>
                 <DraftTimer />
-            </div>
-            <div class="col-6">
-                <div class="row">
-                    <div class="col-7">
-                        <figure>
-                            <img class="img-fluid rounded" src="../../public/img/benita.jpeg" alt="Benita with the trophey">
-                                <figcaption>The reigning 2020 champ!</figcaption>
-                        </figure>
-                    </div>
-                    <!-- <div class="col-6">
-                        <p>Imagine a wonderful write up about all of Benita's victories from last year...</p>
-                    </div> -->
-                </div>
                 
-            </div>
-        </div>
+                
+            </MainColumn>
+            <SideColumn>
+                <h2>2020 Champ:</h2>
+                <figure class="figure">
+                    <img class="figure-img img-fluid rounded" src="../../public/img/benita.jpeg" alt="Benita with the trophey">
+                    <figcaption class="figure-caption text-end">Notice the wine glasses in the background</figcaption>
+                </figure>
+            </SideColumn>
+        </Row>
     </div>
 </template>
 
-<style scoped>
-    h1 {
-        color: #333333;
+<style lang="scss" scoped>
+    @import "../scss/variables.scss";
+
+    .page-title {
+        color: $dark-blue;
     }
 
-    .fit-image {
-        width: 95%;
-        max-width: 95%;
+    h2 {
+        color: $dark-blue;
+    }
+
+    .logo-container {
+        display: inline-block;
+        width: 100px;
     }
 </style>
