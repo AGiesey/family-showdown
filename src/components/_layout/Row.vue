@@ -11,7 +11,7 @@
 </template>
 
 <style lang="scss" scoped>
-  @import '../scss/variables.scss';
+  @import '../../scss/variables.scss';
 
 
 </style>

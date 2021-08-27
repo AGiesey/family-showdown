@@ -1,9 +1,10 @@
 <script>
-    import DraftTimer from './DraftTimer.vue';
-    import MainColumn from './MainColumn.vue';
-    import SideColumn from './SideColumn.vue';
-    import FullColumn from './FullColumn.vue';
-    import Row from './Row.vue';
+    import DraftTimer from '../DraftTimer.vue';
+    import MainColumn from '../_layout/MainColumn.vue';
+    import SideColumn from '../_layout/SideColumn.vue';
+    import FullColumn from '../_layout/FullColumn.vue';
+    import PageLayout from '../_layout/PageLayout.vue';
+    import Row from '../_layout/Row.vue';
 
     export default {
         name: 'HomePage',
@@ -21,6 +22,7 @@
             }
         },
         components: {
+            PageLayout,
             DraftTimer,
             MainColumn,
             SideColumn,
@@ -31,7 +33,7 @@
 </script>
 
 <template>
-    <div class="container px-4">
+    <PageLayout >
         <Row>
             <FullColumn>
                 <h1 class="page-title">Welcome to the Family Showdown!</h1>
@@ -43,7 +45,7 @@
             <MainColumn>
                 <h2>
                     <span class="logo-container">
-                        <img src="../../public/img/draft.png" class="img-fluid" alt="nfl draft logo">
+                        <img src="../../../public/img/draft.png" class="img-fluid" alt="nfl draft logo">
                     </span>
                     Get ready for draft day!! 
                 </h2>
@@ -55,16 +57,16 @@
             <SideColumn>
                 <h2>2020 Champ:</h2>
                 <figure class="figure">
-                    <img class="figure-img img-fluid rounded" src="../../public/img/benita.jpeg" alt="Benita with the trophey">
+                    <img class="figure-img img-fluid rounded" src="../../../public/img/benita.jpeg" alt="Benita with the trophey">
                     <figcaption class="figure-caption text-end">Notice the wine glasses...</figcaption>
                 </figure>
             </SideColumn>
         </Row>
-    </div>
+    </PageLayout>
 </template>
 
 <style lang="scss" scoped>
-    @import "../scss/variables.scss";
+    @import "../../scss/variables.scss";
 
     .page-title {
         color: $dark-blue;

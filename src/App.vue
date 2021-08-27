@@ -1,23 +1,19 @@
 <template>
   <div id="app">
     <Header />
-    <HomePage />
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import HomePage from './components/HomePage.vue'
-
+import Header from './components/Header.vue';
 export default {
   name: 'App',
   components: {
-    Header,
-    HomePage
+    Header
   }
 }
 </script>
-
 <style lang="scss">
   @import "./scss/variables.scss";
 
