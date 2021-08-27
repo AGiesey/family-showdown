@@ -43,25 +43,48 @@
         
         <Row>
             <MainColumn>
-                <h2>
-                    <span class="logo-container">
-                        <img src="../../../public/img/draft.png" class="img-fluid" alt="nfl draft logo">
-                    </span>
-                    Get ready for draft day!! 
-                </h2>
-                <p>{{blurb}}</p>
-                <DraftTimer />
-                
-                
+                <div>
+                    <h2>
+                        <span class="article-title-image-container">
+                            <img src="../../../public/img/draft.png" class="img-fluid" alt="nfl draft logo">
+                        </span>
+                        Get ready for draft day!! 
+                    </h2>
+                    <p>{{blurb}}</p>
+                    <DraftTimer />
+                </div>
+                <div class="mb-5">
+                    <hr />
+                </div>
+                <div>
+                    <h2>
+                        <span class="article-title-image-container">
+                            <img src="../../../public/img/money.png" class="img-fluid" alt="pile of cash">
+                        </span>
+                        Dues
+                    </h2>
+                    <p>
+                        League dues will be <span>$20</span> again this year. Pay to Melissia or Jennifer. I'm lagging a bit behind (as usual) so I 
+                        haven't set the playoff format but I'm thinking that 4 teams make it with the top two or three getting payout. 
+                    </p>
+                </div>
             </MainColumn>
+            
             <SideColumn>
-                <h2>2020 Champ:</h2>
+                <h2>
+                    <span class="article-title-image-container">
+                        <img src="../../../public/img/crown.png" class="img-fluid" alt="golden crown">
+                    </span>
+                    2020 Champ:
+                </h2>
                 <figure class="figure">
                     <img class="figure-img img-fluid rounded" src="../../../public/img/benita.jpeg" alt="Benita with the trophey">
                     <figcaption class="figure-caption text-end">Notice the wine glasses...</figcaption>
                 </figure>
             </SideColumn>
+            
         </Row>
+        
     </PageLayout>
 </template>
 
@@ -76,8 +99,5 @@
         color: $dark-blue;
     }
 
-    .logo-container {
-        display: inline-block;
-        width: 100px;
-    }
+    
 </style>

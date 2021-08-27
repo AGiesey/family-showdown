@@ -16,6 +16,7 @@ export default {
 </script>
 <style lang="scss">
   @import "./scss/variables.scss";
+  @import "./scss/global.scss";
 
   body {
     height: 1vh;
