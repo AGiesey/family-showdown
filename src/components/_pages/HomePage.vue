@@ -46,19 +46,6 @@
                 <div>
                     <h2>
                         <span class="article-title-image-container">
-                            <img src="../../../public/img/draft.png" class="img-fluid" alt="nfl draft logo">
-                        </span>
-                        Get ready for draft day!! 
-                    </h2>
-                    <p>{{blurb}}</p>
-                    <DraftTimer />
-                </div>
-                <div class="mb-5">
-                    <hr />
-                </div>
-                <div>
-                    <h2>
-                        <span class="article-title-image-container">
                             <img src="../../../public/img/money.png" class="img-fluid" alt="pile of cash">
                         </span>
                         Dues
@@ -67,6 +54,20 @@
                         League dues will be <span>$20</span> again this year. Pay to Melissia or Jennifer. I'm lagging a bit behind (as usual) so I 
                         haven't set the playoff format but I'm thinking that 4 teams make it with the top two or three getting payout. 
                     </p>
+                </div>
+                <div class="mb-5">
+                    <hr />
+                </div>
+                <div>
+                    <h2>
+                        <span class="article-title-image-container">
+                            <img src="../../../public/img/Autodraft.png" class="img-fluid" alt="pile of cash">
+                        </span>
+                        <p>
+                            Congratulations to the autodraft; I mean, Chase and Renita; for earning scores of A- on their draft choices this year. Haha, just messing around.
+                            Seriously tho, I hope everyone is aware that they are playing this year :) 
+                        </p>
+                    </h2>
                 </div>
             </MainColumn>
             
