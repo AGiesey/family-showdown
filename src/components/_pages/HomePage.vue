@@ -61,11 +61,13 @@
                         <span class="article-title-image-container">
                             <img src="../../../public/img/Autodraft.png" class="img-fluid" alt="pile of cash">
                         </span>
-                        <p>
-                            Congratulations to the autodraft; I mean, Chase and Renita; for earning scores of A- on their draft choices this year. Haha, just messing around.
-                            Seriously tho, I hope everyone is aware that they are playing this year :) 
-                        </p>
+                        Congrats to the Draft Winners!
                     </h2>
+                    <p>
+                        Congratulations to the autodraft; I mean, Chase and Renita; for earning scores of A- on their draft choices this year. Haha, just messing around.
+                        Seriously tho, I hope everyone is aware that they are playing this year :) 
+                    </p>
+                    
                 </div>
             </MainColumn>
             
