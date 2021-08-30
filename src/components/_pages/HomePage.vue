@@ -1,5 +1,4 @@
 <script>
-    import DraftTimer from '../DraftTimer.vue';
     import MainColumn from '../_layout/MainColumn.vue';
     import SideColumn from '../_layout/SideColumn.vue';
     import FullColumn from '../_layout/FullColumn.vue';
@@ -23,7 +22,6 @@
         },
         components: {
             PageLayout,
-            DraftTimer,
             MainColumn,
             SideColumn,
             FullColumn,
