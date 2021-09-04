@@ -44,6 +44,27 @@
                 <div>
                     <h2>
                         <span class="article-title-image-container">
+                            <img src="../../../public/img/code.png" class="img-fluid" alt="pile of cash">
+                        </span>
+                        Adam's Note
+                    </h2>
+                    <p>
+                        I know you all check for updates here hourly so I wanted to let you know my short term plans. First I 
+                        am going to be adding some security, that means we'll have logins and that our content is a little more 
+                        shielded from the likes of the internet. To do this I have to add a back end application to the server (don't
+                        worry about what that means if you don't know...) I've not done this before and to finally get to the point
+                        the site may go down intermittently as I mess things up. 
+                        <br/>
+                        Another cool thing I'll be able to add relatively quickly after all that is the ability to comment and post
+                        here. So that may be coming too. 
+                    </p>
+                </div>
+                <div class="mb-4">
+                    <hr />
+                </div>
+                <div>
+                    <h2>
+                        <span class="article-title-image-container">
                             <img src="../../../public/img/money.png" class="img-fluid" alt="pile of cash">
                         </span>
                         Dues
@@ -53,7 +74,7 @@
                         haven't set the playoff format but I'm thinking that 4 teams make it with the top two or three getting payout. 
                     </p>
                 </div>
-                <div class="mb-5">
+                <div class="mb-4">
                     <hr />
                 </div>
                 <div>
